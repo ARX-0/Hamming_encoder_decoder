@@ -33,11 +33,11 @@ module hamm_decoder(
         4'd8:de = 16'b0000000010000000;
         4'd9:de = 16'b0000000100000000;
         4'd10:de = 16'b00000_01_000_000_000;
-        4'd11:de = 16'b00000_10_000_000_000; //parity works only till this ..as input is [11:0].. you probably will need to cut it till here initially thought of a 4 to 16 decoder :)
-//        4'd12:de = 16'b0000100000000000; 
-//        4'd13:de = 16'b0001000000000000;
-//        4'd14:de = 16'b0010000000000000;
-//        4'd15:de = 16'b0100000000000000; //one hot
+        4'd11:de = 16'b00000_10_000_000_000; 
+        4'd12:de = 16'b0000100000000000; //parity works only till this ..as input is [11:0].. you probably will need to cut it till here initially thought of a 4 to 16 decoder :)
+        4'd13:de = 16'b0001000000000000;
+        4'd14:de = 16'b0010000000000000;
+        4'd15:de = 16'b0100000000000000; //one hot
 
     default: de = 16'b0000000000000000; 
     endcase
